@@ -2,21 +2,13 @@
 
 * {
     background-color: rgb(241, 236, 246);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-div {
-    color: black;
-}
+/* GENERAL STYLES */
 
-p {
+body {
     color: black;
-}
-
-h1 {
-    color: rgb(0, 0, 0);
-    font-size: 220;
 }
 
 img {
@@ -25,19 +17,52 @@ img {
     border-radius: 5%;
 }
 
+h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+
+/* UTILITIES */
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.title {
-    color: black;
-    font-size: 72px;
+.hborder {
+    margin-left:2rem;
+    margin-right: 2rem;
+}
+
+.vborder {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/* SITEWIDE */
+
+.header {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .subtitle {
-    color: black;
     font-size: 16px;
     font-style: italic;
 }
+
+/* PAGE SPECIFIC */
+
+/* Homepage */
+/* ...etc...*/
+
+/*
+TODO
+.nav {
+}
+
