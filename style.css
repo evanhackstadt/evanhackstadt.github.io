@@ -2,15 +2,36 @@
 
 /* GENERAL STYLES */
 
+/*
+@font-face {
+    font-family: 'Koh';
+    src: url(/fonts/KohSantepheap-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Koh';
+    src: url(/fonts/KohSantepheap-Bold.ttf);
+    font-weight: bold;
+}
+    */
+
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: rgb(241, 236, 246);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', serif;
     color: black;
 }
 
 h1 {
-    font-size: 72px;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3rem;
 }
 
 
