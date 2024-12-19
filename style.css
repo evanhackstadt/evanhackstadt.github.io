@@ -1,20 +1,11 @@
 /* style.css */
 
-* {
-    background-color: rgb(241, 236, 246);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 /* GENERAL STYLES */
 
 body {
+    background-color: rgb(241, 236, 246);
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-}
-
-img {
-    height: auto;
-    width: 250px;
-    border-radius: 5%;
 }
 
 h1 {
@@ -46,9 +37,12 @@ h1 {
 /* SITEWIDE */
 
 .header {
-    text-align: center;
     padding: 1rem;
     margin: 1rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .subtitle {
@@ -59,7 +53,12 @@ h1 {
 /* PAGE SPECIFIC */
 
 /* Homepage */
-/* ...etc...*/
+
+.square-img {
+    height: auto;
+    width: 250px;
+    border-radius: 5%;
+}
 
 /*
 TODO
