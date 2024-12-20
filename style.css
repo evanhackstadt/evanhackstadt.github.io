@@ -15,14 +15,21 @@
 }
     */
 
+:root {
+    --bg-color: rgb(241, 236, 246);
+    --text-color: black;
+    --light-accent: rgb(192, 159, 253);
+    --dark-accent: rgb(42, 6, 100);
+}
+
 html {
     font-size: 16px;
 }
 
 body {
-    background-color: rgb(241, 236, 246);
+    background-color: var(--bg-color);
     font-family: Georgia, 'Times New Roman', serif;
-    color: black;
+    color: var(--text-color);
 }
 
 h1 {
@@ -44,19 +51,34 @@ h2 {
     text-align: center;
 }
 
-.hborder {
-    margin-left:2rem;
-    margin-right: 2rem;
-}
-
-.vborder {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
 
 /* SITEWIDE */
 
+/* Nav Bar */
+nav {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+
+nav a {
+    color: black;
+    flex: 1;
+    text-align: center;
+    padding: 0.2rem;
+    margin: 1rem;
+}
+
+nav a:hover {
+    background-color: var(--light-accent);
+}
+
+nav a.active {
+    color: var(--dark-accent);
+}
+
+/* Standard Page Elements */
 .header {
     padding: 1rem;
     margin: 1rem;
