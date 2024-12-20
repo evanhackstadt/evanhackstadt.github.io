@@ -1,6 +1,6 @@
 /* style.css */
 
-/* GENERAL STYLES */
+/* || GENERAL STYLES */
 
 /*
 @font-face {
@@ -35,24 +35,36 @@ body {
 h1 {
     font-size: 4rem;
     font-weight: 600;
+    line-height: 2rem;
 }
 
 h2 {
     font-size: 3rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 
 
-/* UTILITIES */
+/* || UTILITIES */
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text-center {
     text-align: center;
 }
 
 
-/* SITEWIDE */
+/* || SITEWIDE */
 
 /* Nav Bar */
 nav {
@@ -80,20 +92,18 @@ nav a.active {
 
 /* Standard Page Elements */
 .header {
-    padding: 1rem;
-    margin: 1rem;
-    display: block;
+    padding: 1em;
+    margin: 2em;
+    display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .subtitle {
-    font-size: 16px;
-    font-style: italic;
+    
 }
 
-/* PAGE SPECIFIC */
+/* || PAGE SPECIFIC */
 
 /* Homepage */
 
@@ -103,8 +113,14 @@ nav a.active {
     border-radius: 5%;
 }
 
-/*
-TODO
-.nav {
+.header .square-img {
+    margin: 2em;
+    flex: 0;
 }
+
+#name {
+    text-align: left;
+    line-height: 2em;
+}
+
 
