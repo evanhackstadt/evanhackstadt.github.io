@@ -19,7 +19,8 @@
     --bg-color: rgb(241, 236, 246);
     --text-color: black;
     --white-accent: rgb(225, 214, 246);
-    --light-accent: rgb(192, 159, 253);
+    --light-accent: rgb(207, 185, 246);
+    --mid-accent: rgb(192, 159, 253);
     --dark-accent: rgb(42, 6, 100);
 }
 
@@ -36,7 +37,7 @@ body {
 h1 {
     font-size: 4.5rem;
     font-weight: 600;
-    line-height: 4.5rem;
+    line-height: 1em;
 }
 
 h2 {
@@ -64,6 +65,13 @@ p {
 
 /* || UTILITIES */
 
+/* Formatting for phones */
+@media only screen and (max-width: 600px) {
+    [class*="column"] {
+        width: 100%;
+    }
+}
+
 .text-center {
     text-align: center;
 }
@@ -76,7 +84,7 @@ nav {
     display: flex;
     align-items: center;
     align-content: center;
-    
+    background-color: var(--white-accent);
 }
 
 nav a {
@@ -93,7 +101,7 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color: var(--white-accent);
+    background-color: var(--mid-accent);
     color: var(--dark-accent);
 }
 
@@ -103,6 +111,10 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header .column {
+
 }
 
 .subtitle {
