@@ -18,6 +18,7 @@
 :root {
     --bg-color: rgb(241, 236, 246);
     --text-color: black;
+    --white-accent: rgb(225, 214, 246);
     --light-accent: rgb(192, 159, 253);
     --dark-accent: rgb(42, 6, 100);
 }
@@ -33,9 +34,9 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 4.5rem;
 }
 
 h2 {
@@ -51,9 +52,13 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.33rem;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1em;
+}
+
+p {
+    line-height: 1.15em;
 }
 
 
@@ -75,11 +80,12 @@ nav {
 }
 
 nav a {
-    color: black;
     flex: 1;
     text-align: center;
     padding: 0.2rem;
-    margin: 1rem;
+    margin: 1rem 2rem;
+    color: black;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -87,40 +93,50 @@ nav a:hover {
 }
 
 nav a.active {
+    background-color: var(--white-accent);
     color: var(--dark-accent);
 }
 
 /* Standard Page Elements */
 .header {
-    padding: 1em;
-    margin: 2em;
+    margin: 4rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .subtitle {
-    
+    font-size: 1.4rem;
+    line-height: 1rem;
+    margin-bottom: 4rem;
+}
+
+/* Icon Row */
+.icon-row {
+    display: flex;
+    align-items: center;
+}
+
+.icon-row a {
+    margin-right: 1em;
+}
+
+.icon {
+    height: auto;
+    width: 40px;
 }
 
 /* || PAGE SPECIFIC */
 
 /* Homepage */
 
-.square-img {
+#headshot {
     height: auto;
     width: 250px;
-    border-radius: 5%;
-}
-
-.header .square-img {
-    margin: 2em;
+    border-radius: 7%;
+    margin: 0 2em;
     flex: 0;
 }
 
-#name {
-    text-align: left;
-    line-height: 2em;
-}
 
 
