@@ -24,20 +24,18 @@
     --dark-accent: rgb(42, 6, 100);
 }
 
-html {
-    font-size: 16px;
-}
-
 body {
-    background-color: var(--bg-color);
+    font-size: clamp(12px, 3vw, 16px);
     font-family: Georgia, 'Times New Roman', serif;
     color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 h1 {
     font-size: 4.5rem;
     font-weight: 600;
     line-height: 1em;
+    margin: 0.33em 0;
 }
 
 h2 {
@@ -56,10 +54,15 @@ h4 {
     font-size: 1.33rem;
     font-weight: 400;
     line-height: 1em;
+    margin: 0.5em 0;
 }
 
 p {
     line-height: 1.15em;
+}
+
+img {
+    max-width: 100%;
 }
 
 
@@ -72,7 +75,33 @@ p {
     }
 }
 
-.text-center {
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-ctr {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-ctr {
+    justify-content: center;
+}
+
+.justify-sbt {
+    justify-content: space-between;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-ctr {
     text-align: center;
 }
 
@@ -108,13 +137,6 @@ nav a.active {
 /* Standard Page Elements */
 .header {
     margin: 4rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header .column {
-
 }
 
 .subtitle {
@@ -123,19 +145,14 @@ nav a.active {
     margin-bottom: 4rem;
 }
 
-/* Icon Row */
-.icon-row {
-    display: flex;
-    align-items: center;
-}
-
-.icon-row a {
-    margin-right: 1em;
+.icon-container {
+    margin-top: 1.25em;
 }
 
 .icon {
     height: auto;
     width: 40px;
+    margin-right: 1em;
 }
 
 /* || PAGE SPECIFIC */
