@@ -32,10 +32,10 @@ body {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 4rem;
     font-weight: 600;
     line-height: 1em;
-    margin: 0.33em 0;
+    margin: 0.25em 0;
 }
 
 h2 {
@@ -54,7 +54,7 @@ h4 {
     font-size: 1.33rem;
     font-weight: 400;
     line-height: 1em;
-    margin: 0.5em 0;
+    margin: 0.25em 0;
 }
 
 p {
@@ -111,8 +111,8 @@ img {
 /* Nav Bar */
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    align-content: center;
     background-color: var(--white-accent);
 }
 
@@ -142,7 +142,7 @@ nav a.active {
 .subtitle {
     font-size: 1.4rem;
     line-height: 1rem;
-    margin-bottom: 4rem;
+    margin: 4rem 2rem;
 }
 
 .icon-container {
