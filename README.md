@@ -1,11 +1,13 @@
 # Personal Website project
+https://evanhackstadt.github.io/
 
 ## Goal:
 To create a website that showcases my skills, experience, projects, and personality.
 The site should serve as both a professional portfolio and a project in its own right.
+This is one of my first projects overall.
 
 ## Methods:
-Use basic HTML and CSS to create a static website from scratch
+Use basic HTML and CSS to create a static website from scratch.
 
 ## Improvements / To-Dos:
 - Improve responsiveness to different screen sizes
