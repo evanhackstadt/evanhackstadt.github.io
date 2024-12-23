@@ -79,6 +79,10 @@ img {
     }
 }
 
+.margin {
+    margin: 4rem 2rem;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -125,18 +129,21 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
 
+nav li {
+    margin: 0.5rem 1rem;
+}
+
 nav a {
     flex: 1;
     text-align: center;
-    padding: 0.2rem;
-    margin: 1rem 2rem;
+    padding: 0.5rem;
     color: black;
     font-size: 1.2rem;
 }
@@ -151,9 +158,6 @@ nav a.active {
 }
 
 /* Standard Page Elements */
-.margin {
-    margin: 5% 2.5%;
-}
 
 .icon {
     height: auto;
@@ -188,12 +192,16 @@ nav a.active {
 
 /* Experience */
 
-.experience-container {
-    margin: 4rem 0;
+.row-item {
+    margin: 2rem 1rem;
 }
 
-.experience-item {
-    margin: 2rem 1rem;
+.row-img {
+
+}
+
+.row-txt {
+    
 }
 
 
