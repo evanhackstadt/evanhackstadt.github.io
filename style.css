@@ -24,6 +24,10 @@
     --dark-accent: rgb(42, 6, 100);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-size: clamp(12px, 3vw, 16px);
     font-family: Georgia, 'Times New Roman', serif;
@@ -96,6 +100,10 @@ img {
     justify-content: space-between;
 }
 
+.justify-end {
+    justify-content: end;
+}
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -144,11 +152,7 @@ nav a.active {
 
 /* Standard Page Elements */
 .margin {
-    margin: 4rem 2rem;
-}
-
-.icon-container {
-    margin-top: 1.25em;
+    margin: 5% 2.5%;
 }
 
 .icon {
@@ -161,12 +165,25 @@ nav a.active {
 
 /* Homepage */
 
-#headshot {
+.headshot {
     height: auto;
     width: 250px;
     border-radius: 7%;
-    margin: 0 2em;
-    flex: 0;
+    margin: 0 2.5%;
+}
+
+.name {
+    flex: 1.5;
+    display: flex;
+    align-items: end;
+}
+
+.phrase {
+    flex: 1;
+}
+
+.flex-col .icon-container {
+    flex: 1.25;
 }
 
 /* Experience */
