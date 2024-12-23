@@ -169,6 +169,23 @@ nav a.active {
     margin-right: 1em;
 }
 
+.row-item {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.row-img {
+    height: auto;
+    width: 90px;
+    border-radius: 10%;
+    margin-right: 1.5rem;
+}
+
+.row-txt {
+    /* blank currently */
+}
+
 /* || PAGE SPECIFIC */
 
 /* Homepage */
@@ -196,16 +213,6 @@ nav a.active {
 
 /* Experience */
 
-.row-item {
-    margin: 1rem 0;
-}
 
-.row-img {
-
-}
-
-.row-txt {
-
-}
 
 
