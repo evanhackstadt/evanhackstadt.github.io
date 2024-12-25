@@ -29,7 +29,6 @@
 }
 
 body {
-    font-size: clamp(12px, 3vw, 16px);
     font-family: Georgia, 'Times New Roman', serif;
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -38,26 +37,26 @@ body {
 h1 {
     font-size: 4rem;
     font-weight: 600;
-    line-height: 1em;
+    line-height: 1.15em;
     margin: 0.25em 0;
 }
 
 h2 {
     font-size: 3rem;
     font-weight: 600;
-    line-height: 1em;
+    line-height: 1.15em;
 }
 
 h3 {
     font-size: 1.75rem;
     font-weight: 500;
-    line-height: 1em;
+    line-height: 1.15em;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.33rem;
     font-weight: 400;
-    line-height: 1em;
+    line-height: 1.15em;
     margin: 0.25em 0;
 }
 
@@ -72,11 +71,8 @@ img {
 
 /* || UTILITIES */
 
-/* Formatting for phones */
-@media only screen and (max-width: 600px) {
-    [class*="column"] {
-        width: 100%;
-    }
+.fluid {
+    font-size: clamp(0.8em, 0.8em + 0.4vw, 1.2em);
 }
 
 .margin-rem {
@@ -85,6 +81,14 @@ img {
 
 .margin-vp {
     margin: 7vh 3vw;
+}
+
+.margin-vp-small {
+    margin: 3.5vh 1.5vw;
+}
+
+.margin-vp-large {
+    margin: 11vh 5vw;
 }
 
 .flex {
@@ -119,6 +123,10 @@ img {
 
 .text-ctr {
     text-align: center;
+}
+
+.spacing-2 {
+    line-height: 2em;
 }
 
 
@@ -213,6 +221,18 @@ nav a.active {
 
 /* Experience */
 
+/* Breakpoint for dual column to wrap*/
+@media only screen and (max-width: 1000px) {
+    .dual-col-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .dual-col-item {
+        width: 50%;
+    }
+}
 
 
 
