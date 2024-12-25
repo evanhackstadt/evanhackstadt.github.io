@@ -69,7 +69,7 @@ img {
 }
 
 
-/* || UTILITIES */
+/* || UTILITY CLASSES */
 
 .fluid {
     font-size: clamp(0.8em, 0.8em + 0.4vw, 1.2em);
@@ -175,6 +175,14 @@ nav a.active {
 
 /* Standard Page Elements */
 
+.header-margin {
+    margin: 7vh 0 1.5vh 3vw;
+}
+
+.subheader-margin {
+    margin-left: 3vw;
+}
+
 .icon {
     height: 40px;
     width: auto;
@@ -235,7 +243,7 @@ nav a.active {
 
 @media only screen and (min-width: 1000px) {
     .dual-col-item {
-        width: 50%;
+        width: 46%;
     }
 }
 
