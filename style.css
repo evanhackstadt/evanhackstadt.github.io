@@ -17,11 +17,15 @@
 
 :root {
     --bg-color: rgb(241, 236, 246);
+    --bg-gradient: linear-gradient(rgb(255, 255, 255), rgb(224, 214, 234));
     --text-color: black;
     --white-accent: rgb(225, 214, 246);
     --light-accent: rgb(207, 185, 246);
     --mid-accent: rgb(192, 159, 253);
     --dark-accent: rgb(42, 6, 100);
+    --complement-light: rgb(231, 213, 178);
+    --complement-mid: rgb(223, 194, 136);
+    --complement-dark: rgb(205, 158, 65);
 }
 
 * {
@@ -31,7 +35,8 @@
 body {
     font-family: Georgia, 'Times New Roman', serif;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
+    background-image: var(--bg-gradient);
 }
 
 h1, h2, h3, h4 {
@@ -73,6 +78,10 @@ img {
 
 .fluid {
     font-size: clamp(0.8em, 0.8em + 0.4vw, 1.2em);
+}
+
+.fluid-expand {
+    font-size: clamp(1em, 1em + 0.7vw, 2em);
 }
 
 .margin-rem {
@@ -121,6 +130,12 @@ img {
     flex-direction: column;
 }
 
+.auto-grid {
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
 .text-ctr {
     text-align: center;
 }
@@ -160,7 +175,7 @@ nav a {
     flex: 1;
     text-align: center;
     padding: 0.5rem;
-    color: black;
+    color: var(--text-color);
     font-size: 1.2rem;
 }
 
@@ -203,10 +218,6 @@ nav a.active {
 
 }
 
-.row-txt {
-    /* blank currently */
-}
-
 /* || PAGE SPECIFIC */
 
 /* Homepage */
@@ -232,7 +243,23 @@ nav a.active {
     flex: 1.25;
 }
 
-/* Experience */
+.grid-box {
+    height: 20vh;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 2vh 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auto-grid a {
+    color: var(--text-color);
+    text-decoration-line: none;
+}
+
+/* Experience, Projects, Academics */
 
 /* Breakpoint for dual column to wrap*/
 @media only screen and (max-width: 1000px) {
@@ -245,6 +272,19 @@ nav a.active {
     .dual-col-item {
         width: 46%;
     }
+}
+
+.home-box {
+    width: min(20vw, 150px);
+    height: min(10vh, 75px);
+    background-color: var(--complement-light);
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin: 2vh 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
