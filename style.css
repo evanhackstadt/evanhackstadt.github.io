@@ -130,12 +130,6 @@ img {
     flex-direction: column;
 }
 
-.auto-grid {
-    display: grid;
-    gap: 1vw;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-}
-
 .text-ctr {
     text-align: center;
 }
@@ -222,6 +216,13 @@ nav a.active {
 
 /* Homepage */
 
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: 133vh;
+}
+
 .headshot {
     height: auto;
     width: 250px;
@@ -241,6 +242,12 @@ nav a.active {
 
 .flex-col .icon-container {
     flex: 1.25;
+}
+
+.auto-grid {
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
 }
 
 .grid-box {
