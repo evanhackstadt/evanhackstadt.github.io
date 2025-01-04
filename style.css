@@ -24,7 +24,8 @@
     --light-accent: rgb(216, 200, 246);
     --mid-accent: rgb(192, 159, 253);
     --dark-accent: rgb(42, 6, 100);
-    --complement-light: rgb(231, 213, 178);
+    --complement-white: rgb(248, 243, 235);
+    --complement-light: rgb(245, 237, 222);
     --complement-mid: rgb(223, 194, 136);
     --complement-dark: rgb(205, 158, 65);
 }
@@ -36,7 +37,6 @@
 body {
     font-family: Georgia, 'Times New Roman', serif;
     color: var(--text-color);
-    /* background-color: var(--bg-color); */
     background-image: var(--bg-gradient);
 }
 
@@ -189,15 +189,15 @@ nav a {
     text-align: center;
     padding: 0.5rem;
     font-size: 1.2rem;
-}
 
-nav a:hover {
-    background-color: var(--light-accent);
-}
+    &:hover {
+        background-color: var(--light-accent);
+    }
 
-nav a.active {
-    background-color: var(--mid-accent);
-    color: var(--dark-accent);
+    &.active {
+        background-color: var(--mid-accent);
+        color: var(--dark-accent);
+    }
 }
 
 .default-color-link a {
@@ -210,7 +210,6 @@ nav a.active {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* max-height: 133vh; */
 }
 
 .header-margin {
@@ -254,6 +253,7 @@ nav a.active {
 .name {
     flex: 1.5;
     display: flex;
+    text-align: center;
     align-items: end;
 }
 
@@ -263,6 +263,13 @@ nav a.active {
 
 .flex-col .icon-container {
     flex: 1.25;
+}
+
+.bubble-item {
+    background-color: var(--complement-white);
+    padding: 0.5em;
+    border: solid 2px black;
+    border-radius: 1.5em;
 }
 
 .auto-grid {
@@ -276,7 +283,7 @@ nav a.active {
 }
 
 .grid-box {
-    height: 20vh;
+    height: clamp(80px, 15vh, 200px);
     background-image: var(--white-gradient);
     border-color: black;
     border-style: solid;
