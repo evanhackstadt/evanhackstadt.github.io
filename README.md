@@ -10,9 +10,7 @@ This is one of my first projects overall.
 Use basic HTML and CSS to create a static website from scratch.
 
 ## Improvements / To-Dos:
-- Improve responsiveness to different screen sizes
 - Add sub-sub-pages (for experiences & projects)
-- Clean up CSS and implement best practices
 - Add animations
 - Add JavaScript for interactable/dynamic elements (and to practice JS)
 
