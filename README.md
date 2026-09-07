@@ -1,19 +1,7 @@
-# Personal Website project
+# Personal Website
+
 https://evanhackstadt.github.io/
 
-## Goal:
-To create a website that showcases my skills, experience, projects, and personality.
-The site should serve as both a professional portfolio and a project in its own right.
-This is one of my first projects overall.
+## Description
 
-## Methods:
-Use basic HTML and CSS to create a static website from scratch.
-
-## Improvements / To-Dos:
-- Add sub-sub-pages (for experiences & projects)
-- Add animations
-- Add JavaScript for interactable/dynamic elements (and to practice JS)
-
-## Future Directions:
-- Transition the site to use a framework(s) (e.g. SASS, React, Next, Bootstrap)
-- Explore custom domain hosting outside of GitHub Pages
+Personal portfolio website documenting my major experience, projects, academics, and contact info.
